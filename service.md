@@ -99,7 +99,7 @@ sudo vim /etc/systemd/system/hello.service
 Recarga la configuración de todos los archivos:
 
 ```bash
-sudo systemctl restart hello
+sudo systemctl daemon-reload
 ```
 
 Detiene y vuelve a iniciar el servicio hello. Es esencial cuando modificas un .service:

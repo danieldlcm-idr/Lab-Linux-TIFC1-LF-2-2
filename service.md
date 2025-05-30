@@ -50,10 +50,10 @@ Accede a la instancia EC2:
 ssh -i nombre.pem ubuntu@<IP_PUBLICA>
 ```
 
-Mueve el archivo al directorio de servicios del sistema:
+Copia el archivo al directorio de servicios del sistema:
 
 ```bash
-sudo mv hello.service /etc/systemd/system/
+sudo cp hello.service /etc/systemd/system/
 ```
 
 ## ⚙️ Paso 4: Habilitar e iniciar el servicio

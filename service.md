@@ -37,7 +37,7 @@ Este archivo define un servicio que:
 Desde tu terminal local, utiliza el siguiente comando para subir el archivo:
 
 ```bash
-scp -i nombre.pem hello.service ubuntu@<IP_PUBLICA>
+scp -i nombre.pem hello.service ubuntu@<IP_PUBLICA>:~
 ```
 
 Reemplaza `nombre.pem` por el nombre de tu archivo `.pem` y `<IP_PUBLICA>` por la IP de tu instancia.

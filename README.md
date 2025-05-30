@@ -2,8 +2,6 @@
 
 En esta guía aprenderás a conectarte a una instancia EC2 de Ubuntu en AWS utilizando un archivo de clave privada (.pem). También realizarás la instalación de Apache para verificar que el servidor web está funcionando correctamente y te introducirás a comandos de verificación, red y archivos.
 
----
-
 ## 🔧 Requisitos previos
 
 - Tener un archivo `.pem` (clave privada) descargado desde AWS.
@@ -11,7 +9,6 @@ En esta guía aprenderás a conectarte a una instancia EC2 de Ubuntu en AWS util
 - Tener acceso a internet y la IP pública de tu instancia EC2.
 - Tu instancia debe tener habilitado el puerto 22 (SSH) y 80 (HTTP) en su grupo de seguridad.
 
----
 
 ## 🔐 Conexión SSH a tu instancia Ubuntu
 
@@ -40,8 +37,6 @@ Antes de hacer actualizaciones, asegúrate de que la instancia tiene conexión:
 ```bash
 ping -c 3 google.com
 ```
-
----
 
 ## 🔄 Actualización del sistema Ubuntu
 
@@ -88,7 +83,6 @@ Configura Apache para que se inicie automáticamente al arrancar el sistema.
 ```bash
 sudo systemctl enable apache2    # Lo activa al arrancar 
 ```
----
 
 ## 🔎 Verifica el puerto 80 y respuesta de Apache
 
@@ -103,8 +97,6 @@ Alternativa para probar desde la misma instancia:
 ```bash
 curl -I http://localhost
 ```
-
----
 
 ## ✅ Verificación del servidor web
 
@@ -122,8 +114,6 @@ Luego abre tu navegador y accede a:
 http://<IP_PUBLICA>
 ```
 
----
-
 ## 🚀 Nueva Página Personalizada
 
 Crea un archivo nuevo y accede a él desde el navegador:
@@ -138,8 +128,6 @@ Accede a:
 http://<IP_PUBLICA>/info.html
 ```
 
----
-
 ## 🧠 Visualiza lo que has hecho
 
 ```
@@ -147,15 +135,13 @@ Tu PC (Cliente) ───HTTP──▶ Servidor EC2 (Apache en Ubuntu)
            ↖────────────── Navegador accede a /var/www/html/
 ```
 
----
-
-## Parte 2
+## 🛫 Parte 2
 
 Continúa a la segunda parte del Laboratorio consultando el archivo [Service](./service.md) para seguir trabajando con tu instancia.
 
 ---
 
-## Glosario
+## 📔 Glosario
 
 Puedes consultar el glosario de términos en [Glosario](./glosario.md)
 

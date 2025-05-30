@@ -125,13 +125,6 @@ Accede a:
 http://<IP_PUBLICA>/info.html
 ```
 
-## 🧠 Visualiza lo que has hecho
-
-```
-Tu PC (Cliente) ───HTTP──▶ Servidor EC2 (Apache en Ubuntu)
-           ↖────────────── Navegador accede a /var/www/html/
-```
-
 ## 🛫 Parte 2
 
 Continúa a la segunda parte del Laboratorio consultando el archivo [Service](./service.md) para seguir trabajando con tu instancia.

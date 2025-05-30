@@ -88,17 +88,22 @@ sudo tail -f /var/log/hello.log
 
 Presiona `Ctrl + C` para salir del monitoreo en tiempo real.
 
-## 🧪 Bonus: Detener y reiniciar el servicio
+## 🧪 Modificar dinámicamente el servicio
 
-Para detener el servicio:
+Cambia la frecuencia del log (de 10 a 5 segundos), sin reiniciar el sistema.
 
 ```bash
-sudo systemctl stop hello
+sudo vim /etc/systemd/system/hello.service
 ```
 
-Para reiniciarlo:
+Recarga la configuración de todos los archivos:
 
 ```bash
 sudo systemctl restart hello
 ```
 
+Detiene y vuelve a iniciar el servicio hello. Es esencial cuando modificas un .service:
+
+```bash
+sudo systemctl restart hello
+```

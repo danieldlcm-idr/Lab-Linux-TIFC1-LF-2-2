@@ -9,7 +9,6 @@ En esta guía aprenderás a conectarte a una instancia EC2 de Ubuntu en AWS util
 - Tener acceso a internet y la IP pública de tu instancia EC2.
 - Tu instancia debe tener habilitado el puerto 22 (SSH) y 80 (HTTP) en su grupo de seguridad.
 
-
 ## 🔐 Conexión SSH a tu instancia Ubuntu
 
 1. Ubica tu archivo `.pem` en una carpeta segura.
@@ -27,8 +26,6 @@ ssh -i nombre.pem ubuntu@<IP_PUBLICA>
 ```
 
 Reemplaza `nombre.pem` por el nombre real de tu archivo y `<IP_PUBLICA>` por la IP de tu instancia EC2.
-
----
 
 ## 🌐 Verificar conexión a Internet (Importante)
 
@@ -139,9 +136,6 @@ Tu PC (Cliente) ───HTTP──▶ Servidor EC2 (Apache en Ubuntu)
 
 Continúa a la segunda parte del Laboratorio consultando el archivo [Service](./service.md) para seguir trabajando con tu instancia.
 
----
-
 ## 📔 Glosario
 
 Puedes consultar el glosario de términos en [Glosario](./glosario.md)
-
